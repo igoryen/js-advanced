@@ -7,12 +7,17 @@ const human = {
 
 // number string human - will get mem space allocated by engine
 
-function calculate() {
-    const sumTotal = 4 + 5;
-    return sumTotal;
+function subtractTwo(num) {
+    return num - 2;
 }
 
-calculate();
+
+function calculate() {
+    const sumTotal = 4 + 5;
+    return subtractTwo(sumTotal);
+}
+
+calculate(); // can run this in Chrome > Sources > Snippets
 
 // when the ... gets to this line in file
 // this function will be placed on a call stack
