@@ -14,10 +14,11 @@ function subtractTwo(num) {
 
 function calculate() {
     const sumTotal = 4 + 5;
-    return subtractTwo(sumTotal);
+    return sumTotal;
 }
 
 calculate(); // can run this in Chrome > Sources > Snippets
+calculate();
 
 // when the ... gets to this line in file
 // this function will be placed on a call stack
