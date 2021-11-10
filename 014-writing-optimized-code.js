@@ -21,7 +21,9 @@ obj2.a = 100;
 // but obj2.b and then obj2.a
 // The assignment order should go as in #3
 
-
+delete obj1.x = 30; // 4 
+// 4: this also breaks the hidden classes and 
+// deoptimizes the code
 
 // inline caching
 
