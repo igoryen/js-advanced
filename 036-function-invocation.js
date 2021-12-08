@@ -9,6 +9,10 @@ function india() {
     console.log('warm')
 }
 
+// function invocation
+canada()
+india()
+
 /**
  * function expressions do not get hoisted
  * (do not get memorized)
