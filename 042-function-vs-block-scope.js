@@ -1,11 +1,11 @@
-if(true){
-    var press = 'apretar'
+if (true) {
+    var x = '123'
 }
 
-console.log(press)
+console.log(x)
 
-if(true){
-    let worker = 'trabajador'
+if (true) {
+    let y = '234'
 }
 
-console.log(worker)
+console.log(y) // correct: ReferenceError: y is not defined

@@ -1,16 +1,16 @@
-function printName() {
+function printName() { // 1
     return 'Igor Entaltsev';
 }
 
-function findName() {
+function findName() { // 1
     return printName();
 }
 
-function sayMyName() {
+function sayMyName() { // 1
     return findName();
 }
 
-console.log(sayMyName());
+console.log(window.sayMyName());
 
 // object is like a table
 // window.a = 'teddy'
@@ -20,3 +20,13 @@ console.log(sayMyName());
 // you create a new row in the table
 // the cell in the 'variable name' column holds 'a'
 // the cell in the 'variable value' column holds 'teddy'
+
+/**
+ * 1. this functon is in the GLOBAL execution envitonment
+ * they are the properties of the GLOBAL object
+ *
+ */
+
+/**
+ *
+ */
