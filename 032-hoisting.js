@@ -1,7 +1,7 @@
 console.log('1-------');
 console.log(teddy); // 1
 console.log(sing()); // 2, 3
-var teddy = 'bear';
+let teddy = 'bear'; // 4
 
 (function sing() {
     console.log("oh lala la");
@@ -16,4 +16,7 @@ var teddy = 'bear';
  *  therefore the engine does not allocate memory for the f-object
  *  i.e. it does not hoist it.
  *  Therefore, the error here is 'Reference error: sing is not defined'
+ * 4. The error here is 'ReferenceError: teddy is not defined',
+ *  because the variable is declared using other word than 'var'
+ *  and therefore the engine does not hoist variable 'teddy' either.
  */
