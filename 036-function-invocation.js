@@ -1,5 +1,5 @@
 // function expression
-var canada = function () {
+var canada = () => {
     console.log('cold')
 }
 
