@@ -6,26 +6,14 @@ var canada = () => {
 
 // function declaration
 function india() {
+    console.log(arguments); // 1
     console.log('warm')
 }
 
 // function invocation
-canada()
+// canada()
 india()
 
-function marry(person1, person2) {
-    console.log("m1", arguments);
-    console.log("m1", Array.from(arguments)); // 1
-    return `${person1} is now married to ${person2}`
-}
-
-function marry2(...args) {
-    console.log("m2", args);
-    console.log("m2", Array.from(arguments)); // 1
-    return `${args[0]} is now married to ${args[0]}`
-}
-
-marry2('Tim', 'Tina');
 
 /**
  * function expressions do not get hoisted
@@ -33,5 +21,8 @@ marry2('Tim', 'Tina');
  *
  * but function declarations do.
  *
- * 1. [ 'Tim', 'Tina' ]
+ * 1. the arguments object is always there
+ * in the new environment
+ * but since no parameters, then it is empty: '{}'
+ *
  */
