@@ -5,6 +5,7 @@ function sayMyName() {
         var b = 'b';
         return function printName() {
             var c = 'c';
+            console.log(a);
             return 'igoryen';
         }
     }
@@ -22,7 +23,7 @@ sayMyName()()();
  * cs[1] CREATION
  * cs[1].a = 'undefined'
  * cs[1] EXECUTION
- * L2: cs[1].a = 'undefined'
+ * L2: cs[1].a = 'a' <--- corrected from previous commit
  * L3: return text of findName()
  * [???] add '()' and run
  *
@@ -39,6 +40,9 @@ sayMyName()()();
  * cs[3].c = 'undefined'
  * cs[3] EXECUTION
  * L6: cs[3].c = 'c'
+ * L8: cs[3].a: not found
+ *     cs[2].a: not found
+ *     cs[1].a: "a" // --> a
  *
  */
 
