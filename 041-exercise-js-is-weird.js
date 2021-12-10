@@ -1,3 +1,5 @@
+'use strict'
+
 function weird() {
     height = 50;
     return height;
@@ -12,7 +14,7 @@ weird();
  *
  * cs[1] = weird() environment
  * cs[1] CREATION
- * L2: 'height'???
+ * L2: 'height'??? --> ReferenceError: height is not defined
  * cs[0].height = 'undefined'
  * cs[1] EXECUTION
  * cs[0].height = 50
